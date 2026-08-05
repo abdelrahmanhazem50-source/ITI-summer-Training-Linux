@@ -1,0 +1,20 @@
+Linux Detective Report
+======================
+
+This file is generated automatically by running:
+
+./generate_report.sh
+
+The script records:
+- Current shell
+- Shell PID
+- Parent PID
+- Current user
+- Current working directory
+- Home directory
+- Hostname
+- Login shell
+- PATH
+- Number of environment variables
+
+The final values are generated from the Ubuntu machine when the script runs.

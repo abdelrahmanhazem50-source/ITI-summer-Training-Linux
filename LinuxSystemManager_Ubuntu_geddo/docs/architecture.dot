@@ -1,0 +1,18 @@
+digraph LinuxSystemManager {
+    graph [rankdir=TB, bgcolor="white", nodesep=0.45, ranksep=0.55, pad=0.25];
+    node [shape=box, style="rounded", fontname="DejaVu Sans", fontsize=11, margin="0.18,0.12"];
+    edge [fontname="DejaVu Sans", fontsize=9];
+
+    Main [label="main.cpp\nMenu + object calls", shape=box];
+    System [label="SystemInfo\nuname()\n/proc/meminfo\nstatvfs()"];
+    Process [label="ProcessManager\n/proc/<PID>/status\nfork() / waitpid() / kill()"];
+    File [label="FileManager\nstat() / lstat()\nchmod()"];
+    Network [label="NetworkManager\ngetifaddrs()\ngetaddrinfo()\nfork() + exec() for ping"];
+    Thread [label="ThreadDemo\nstd::thread\nsleep_for() / join()"];
+
+    Main -> System;
+    Main -> Process;
+    Main -> File;
+    Main -> Network;
+    Main -> Thread;
+}

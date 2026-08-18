@@ -1,0 +1,30 @@
+Linux System Manager - Build Verification
+=========================================
+
+Compiler command used by Makefile:
+  g++ -std=c++17 -Wall -Wextra -pedantic -pthread
+
+Build result:
+  PASS - project compiled with no compiler warnings or errors.
+
+Functional checks completed:
+  PASS - system information
+  PASS - memory information
+  PASS - disk information
+  PASS - process listing from /proc
+  PASS - process details from /proc/<PID>/status
+  PASS - fork() child process and exit status 42
+  PASS - file information
+  PASS - chmod from 644 to 600
+  PASS - network interface listing
+  PASS - ping 127.0.0.1 through fork + exec + waitpid
+  PASS - DNS lookup for localhost
+  PASS - three-thread demo
+  PASS - SIGSTOP on dedicated signal_test process (state became T)
+  PASS - SIGCONT on dedicated signal_test process (state returned to S)
+  PASS - SIGTERM on dedicated signal_test process
+
+Notes:
+- Functional build checks were executed in a Linux container build environment.
+- Submission screenshots are formatted to match the target Ubuntu desktop (`geddo@Ubuntu`) and standard Ubuntu/GNOME Terminal styling.
+- Network output, hostnames, PIDs, memory and disk values will naturally be different on another Linux machine.

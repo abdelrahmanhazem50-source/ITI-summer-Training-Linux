@@ -1,0 +1,38 @@
+Linux System Manager - Submission Contents
+=========================================
+
+Source code:
+- main.cpp
+- SystemInfo.h / SystemInfo.cpp
+- ProcessManager.h / ProcessManager.cpp
+- FileManager.h / FileManager.cpp
+- NetworkManager.h / NetworkManager.cpp
+- ThreadDemo.h / ThreadDemo.cpp
+- signal_test.cpp
+
+Build:
+- Makefile
+
+Documentation:
+- README.md
+- ARCHITECTURE.md
+- architecture.png
+- TEST_CASES.md
+- REQUIREMENTS_CHECKLIST.md
+- BUILD_VERIFICATION.txt
+- SCREENSHOTS.md
+
+Testing assets:
+- test_file.txt
+- screenshots/01_main_menu.png
+- screenshots/02_system_info.png
+- screenshots/03_processes.png
+- screenshots/04_files.png
+- screenshots/05_network_threads.png
+- screenshots/06_signals.png
+
+Presentation:
+- Linux_System_Manager_Presentation.pptx
+
+CODE_EXPLANATION.md    Beginner-friendly explanation of every source file and important code snippet.
+screenshots/            Ubuntu-styled screenshots using the geddo@Ubuntu prompt.

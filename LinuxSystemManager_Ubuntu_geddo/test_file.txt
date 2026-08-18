@@ -1,0 +1,2 @@
+This is a safe test file for the Linux System Manager project.
+Use it to test file information and chmod without touching system files.
